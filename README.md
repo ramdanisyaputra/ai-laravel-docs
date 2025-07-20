@@ -9,7 +9,7 @@ An intelligent Laravel documentation assistant that uses **dynamic LLM tool sele
 - **🔄 Dynamic RAG**: Retrieval-Augmented Generation with specialized tools for different query types
 - **📚 Laravel 12.x Documentation**: Complete Laravel documentation crawled and vectorized using Firecrawl
 - **🔍 Multi-Query Search**: Advanced search strategies with FAISS vector similarity search
-- **💬 Multiple Interfaces**: Command-line, Gradio web interface, and interactive chat
+- **💬 One Interfaces**: Command-line, and interactive chat
 - **📊 Vector Store Management**: Persistent FAISS storage with automatic loading/creation
 
 ## 🏗️ System Architecture
@@ -566,15 +566,12 @@ numpy>=1.24.0                    # Numerical computations
 
 #### Web & Interface
 ```python
-streamlit>=1.28.0               # Web interface option
 firecrawl-py>=0.0.8             # Web scraping service
 ```
 
 #### Utilities
 ```python
 python-dotenv>=1.0.0            # Environment variable management
-pandas>=2.0.0                   # Data manipulation
-plotly>=5.17.0                  # Data visualization
 ```
 
 ### Data Flow Architecture
