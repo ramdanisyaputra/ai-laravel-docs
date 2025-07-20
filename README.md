@@ -21,7 +21,7 @@ An intelligent Laravel documentation assistant that uses **dynamic LLM tool sele
 
 **🧠 Intelligent Tool Selection**: GPT-4.1 orchestrator automatically chooses the best tools for each question
 **💰 Cost-Optimized Architecture**: Strategic use of GPT-4.1 for orchestration and GPT-3.5-turbo for specialized tasks
-| **Final Answerer** | GPT-3.5-turbo | Response synthesis and formatting | Optimized |
+**Final Answerer** | GPT-3.5-turbo | Response synthesis and formatting | Optimized |
 
 ## 📁 Project Structure
 
