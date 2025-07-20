@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Environment
+.env
+.env.*
+
+# Virtualenv
+venv/
+ENV/
+
+# FAISS index files
+laravel_faiss_index/
+*.faiss
+*.pkl
+
+# Pipenv
+Pipfile.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Streamlit/Gradio/other app logs
+*.log
+
+# VSCode
+.vscode/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Node
+node_modules/
