@@ -4,8 +4,8 @@ An intelligent Laravel documentation assistant that uses **dynamic LLM tool sele
 
 ## 🌟 Features
 
-- **🧠 Intelligent Tool Selection**: GPT-4 orchestrator automatically chooses the best tools for each question
-- **💰 Cost-Optimized Architecture**: Strategic use of GPT-4 for orchestration and GPT-3.5-turbo for specialized tasks
+- **🧠 Intelligent Tool Selection**: GPT-4.1 orchestrator automatically chooses the best tools for each question
+- **💰 Cost-Optimized Architecture**: Strategic use of GPT-4.1 for orchestration and GPT-3.5-turbo for specialized tasks
 - **🔄 Dynamic RAG**: Retrieval-Augmented Generation with specialized tools for different query types
 - **📚 Laravel 12.x Documentation**: Complete Laravel documentation crawled and vectorized using Firecrawl
 - **🔍 Multi-Query Search**: Advanced search strategies with FAISS vector similarity search
