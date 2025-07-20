@@ -364,7 +364,6 @@ Your Laravel application will be available at `http://localhost:8000`
 ## 📊 Performance & Optimization
 
 ### Cost-Effective Model Usage
-- **~70% Cost Reduction**: Strategic model selection vs. using GPT-4.1 for everything
 - **Smart Orchestration**: GPT-4.1 used only for complex decision-making
 - **Bulk Processing**: GPT-3.5-turbo handles most content processing efficiently
 
