@@ -19,13 +19,8 @@ An intelligent Laravel documentation assistant that uses **dynamic LLM tool sele
 
 ### Cost-Optimized Model Strategy
 
-| Component | Model | Purpose | Cost Impact |
-|-----------|--------|---------|-------------|
-| **Orchestrator** | GPT-4 | Complex decision-making and tool selection | High precision |
-| **Version Tool** | GPT-3.5-turbo | Version information extraction | Cost-effective |
-| **Feature Tool** | GPT-4 | Complex feature explanations with code | Quality assured |
-| **Installation Tool** | GPT-3.5-turbo | Step-by-step guidance | Economical |
-| **General Tool** | GPT-3.5-turbo | General documentation queries | Budget-friendly |
+**🧠 Intelligent Tool Selection**: GPT-4.1 orchestrator automatically chooses the best tools for each question
+**💰 Cost-Optimized Architecture**: Strategic use of GPT-4.1 for orchestration and GPT-3.5-turbo for specialized tasks
 | **Final Answerer** | GPT-3.5-turbo | Response synthesis and formatting | Optimized |
 
 ## 📁 Project Structure
@@ -369,8 +364,8 @@ Your Laravel application will be available at `http://localhost:8000`
 ## 📊 Performance & Optimization
 
 ### Cost-Effective Model Usage
-- **~70% Cost Reduction**: Strategic model selection vs. using GPT-4 for everything
-- **Smart Orchestration**: GPT-4 used only for complex decision-making
+- **~70% Cost Reduction**: Strategic model selection vs. using GPT-4.1 for everything
+- **Smart Orchestration**: GPT-4.1 used only for complex decision-making
 - **Bulk Processing**: GPT-3.5-turbo handles most content processing efficiently
 
 ### Vector Store Performance
@@ -412,7 +407,7 @@ vector_store = LaravelDocsVectorStore(
 chatbot = AdvancedRAGWithDynamicTools(
     vector_store,
     temperature=0.0,                      # More deterministic responses
-    orchestrator_model="gpt-4-turbo"      # Latest GPT-4 variant
+    orchestrator_model="gpt-4.1-turbo"      # Latest GPT-4.1 variant
 )
 ```
 
@@ -457,7 +452,7 @@ python main.py  # Will automatically rebuild
 ## � Advanced Features
 
 ### Dynamic Tool Selection Logic
-The GPT-4 orchestrator uses sophisticated prompts to analyze queries:
+The GPT-4.1 orchestrator uses sophisticated prompts to analyze queries:
 
 ```
 Query Type Analysis:
@@ -606,7 +601,7 @@ class ChatMessageHistory:
 ### Tool Selection Logic
 
 ```python
-# GPT-4 Orchestrator Decision Tree
+# GPT-4.1 Orchestrator Decision Tree
 def select_tools(query: str) -> List[str]:
     """
     Intelligent tool selection based on query analysis:
@@ -659,7 +654,7 @@ class DebuggingTool(DynamicLLMTool):
             description="Laravel debugging and troubleshooting",
             func=self.debug_search,
             vector_store_manager=vector_store_manager,
-            model_name="gpt-4"  # Complex debugging needs GPT-4
+            model_name="gpt-4.1"  # Complex debugging needs GPT-4.1
         )
 ```
 
@@ -785,7 +780,7 @@ SOFTWARE.
 
 **Built with ❤️ using:**
 - **🦜 LangChain**: Comprehensive LLM framework and orchestration
-- **🤖 OpenAI**: GPT-4 and GPT-3.5-turbo models for intelligent responses  
+- **🤖 OpenAI**: GPT-4.1 and GPT-3.5-turbo models for intelligent responses  
 - **⚡ FAISS**: Facebook's efficient similarity search and clustering
 - **🔥 Firecrawl**: Reliable web scraping and content extraction
 - **🐍 Python**: The foundation that makes it all possible

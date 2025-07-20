@@ -31,8 +31,8 @@ class AdvancedRAGWithDynamicTools:
     
     def __init__(self, vector_store_manager, temperature=0.1):
         self.vector_store_manager = vector_store_manager
-        # 🧠 Use GPT-4 for complex orchestration (deciding which tools to use)
-        self.orchestrator_llm = ChatOpenAI(model="gpt-4", temperature=temperature)
+        # 🧠 Use GPT-4.1 for complex orchestration (deciding which tools to use)
+        self.orchestrator_llm = ChatOpenAI(model="gpt-4.1", temperature=temperature)
         # 🎨 Use GPT-3.5-turbo for final response synthesis (cost-effective)
         self.final_llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=temperature)
         self.chat_history = ChatMessageHistory()
@@ -117,7 +117,7 @@ Context:
                         context = "\n\n".join([f"Document {i}:\n{doc.page_content}" 
                                              for i, doc in enumerate(all_docs[:5], 1)])
                 
-                # LLM analysis - using GPT-4 for complex feature explanations
+                # LLM analysis - using GPT-4.1 for complex feature explanations
                 feature_llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.1)
                 prompt = ChatPromptTemplate.from_messages([
                     ("system", """You are a Laravel feature specialist. Only follow the RAG (Retrieval-Augmented Generation) approach: analyze the provided documentation context and answer strictly based on it.
@@ -262,7 +262,7 @@ Context:
                 description="Search for specific Laravel features like middleware, routing, Eloquent, validation, authentication, etc.",
                 func=feature_search_tool,
                 vector_store_manager=self.vector_store_manager,
-                model_name="gpt-4"  # Complex feature explanations need GPT-4
+                model_name="gpt-4.1"  # Complex feature explanations need GPT-4.1
             ),
             DynamicLLMTool(
                 name="installation_search",
