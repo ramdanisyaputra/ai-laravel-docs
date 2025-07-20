@@ -322,7 +322,7 @@ Route::get('admin/profile', function () {
 🤖 Laravel Bot: Here's a step-by-step guide to install Laravel:
 
 ## Prerequisites
-- PHP >= 8.1
+- PHP >= 8.2
 - Composer (dependency manager)
 - Node.js & npm (for frontend assets)
 
@@ -507,7 +507,6 @@ except Exception as e:
 ```python
 # Modern web-based interface
 # Progressive initialization with live updates
-# Clean, responsive chat interface
 # State management across sessions
 # Automatic system setup workflow
 ```
@@ -664,18 +663,11 @@ class DebuggingTool(DynamicLLMTool):
 - Optimize vector store chunk sizes for different content types
 - Implement parallel tool execution for independent operations
 
-#### 🎨 Interface Enhancements  
-- Add voice input/output capabilities
-- Create VS Code extension integration
-- Build mobile-responsive progressive web app
-- Add dark/light theme support
-
 ### How to Contribute
-
 1. **🍴 Fork the Repository**
    ```bash
-   git clone https://github.com/your-username/laravel-docs-rag.git
-   cd laravel-docs-rag
+   git clone https://github.com/ramdanisyaputra/ai-laravel-docs.git
+   cd ai-laravel-docs
    ```
 
 2. **🔧 Set Up Development Environment**
@@ -694,10 +686,6 @@ class DebuggingTool(DynamicLLMTool):
    ```bash
    # Run existing functionality
    python main.py
-   
-   # Test web interface
-   python app.py
-   ```
 
 4. **📝 Submit Pull Request**
    - Ensure code follows existing patterns
